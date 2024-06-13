@@ -8,19 +8,14 @@
 #Write your code below this line 👇
 print("Welcome to Tip Calculator!")
 
-bill = input("Please enter Bill amount:\n")
-bill = int(bill)
+bill = int(input("Please enter Bill amount:\n"))
 
-tip = input("How much Tip would you like to give? 10/12/15 %\n")
-tip = int(tip)
+tip = int(input("How much Tip would you like to give? 10/12/15 %\n"))
 
-split = input("How many people to Split the bill?\n")
-split = int(split)
+split = int(input("How many people to Split the bill?\n"))
 
-tip_amount = int(bill*tip)/100
-tip_amount = float(tip_amount)
+tip_amount = float((bill*tip)/100)
 
-split_amount = (bill + tip_amount)/ split
-split_amount = float(split_amount)
+split_amount = float((bill + tip_amount)/ split)
 
 print(f"Each person should pay: {split_amount}")
